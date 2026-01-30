@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html lang="fr">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Titre de la page</title>
+
+  </head>
+
+  <body>
+    <header>
+        <center><img src="images\logo-lbp-header.png" alt="Logo"></center>
+        <hr>
+            <nav>
+                <a href="index.html">Accueil</a> &nbsp;|&nbsp;
+                <a href="about.html">A propos</a> &nbsp;|&nbsp;
+                <a href="inscription.html">Inscription</a> &nbsp;|&nbsp;
+                <a href="connexion.html">Connexion</a> &nbsp;|&nbsp;
+                <a href="avis.html">Avis</a> &nbsp;|&nbsp;
+                <a href="contact.html">Contact</a> &nbsp;|&nbsp;
+            </nav>
+        <hr>
+    </header>
+    <main>
+    <h1>Votre avis nous intéresse</h1>
+    <h2>Description</h2>
+
+    <form method="get">
+      <label for="Nom">Nom :</label>
+      <input type="text" id="Nom" name="Nom" required>
+      <br><br>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+      <br><br>
+
+      <label for="objet">Objet de la demande :</label>
+      <select id="objet" name="objet" required>
+        <option value="">--Sélectionnez--</option>
+        <option value="produit acheté">produit acheté</option>
+        <option value="service commercial">service commercial</option>
+        <option value="service technique">service technique</option>
+        <option value="autre">autre</option>
+      </select>
+      <br><br>
+
+      <label>Catégories concernées :</label><br>
+        <input type="checkbox" id="immobilier" name="categories" value="Immobilier">
+        <label for="immobilier">Immobilier</label>
+        <input type="checkbox" id="vehicules" name="categories" value="Véhicules">
+        <label for="vehicules">Véhicules</label>
+        <input type="checkbox" id="vetements" name="categories" value="Vêtements">
+        <label for="vetements">Vêtements</label>
+        <input type="checkbox" id="multimedia" name="categories" value="Multimédia">
+        <label for="multimedia">Multimédia</label>
+        <input type="checkbox" id="maison" name="categories" value="Maison">
+        <label for="maison">Maison</label>
+        <input type="checkbox" id="loisirs" name="categories" value="Loisirs">
+        <label for="loisirs">Loisirs</label>
+        <input type="checkbox" id="services" name="categories" value="Services">
+        <label for="services">Services</label>
+      <br><br>
+
+      <label for="photo">Photo du produit (si déjà acheté) :</label>
+      <input type="file" id="photo" name="photo" accept="image/*">
+      <br><br>
+
+      <label>Satisfaction :</label>
+      <input type="radio" id="satisfait" name="satisfaction" value="Satisfait" required>
+      <label for="satisfait">Satisfait</label>
+      <input type="radio" id="pas-satisfait" name="satisfaction" value="Pas satisfait">
+      <label for="pas-satisfait">Pas satisfait</label>
+      <br><br>
+
+      <label for="commentaires">Commentaires :</label><br>
+      <textarea id="commentaires" name="commentaires" rows="4" cols="50" placeholder="Votre avis ou toute information complémentaire..."></textarea>
+      <br><br>
+
+      <button type="submit">Envoyer</button>
+      <button type="reset">Effacer</button>
+    </form>
+    </main>
+    <footer>
+        <hr>
+        <center><p>Copyright 2026 Corbeille WWW</p></center>
+    </footer>
+  </body>
+
+</html>

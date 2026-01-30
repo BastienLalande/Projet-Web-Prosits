@@ -1,0 +1,69 @@
+<!doctype html>
+
+<html lang="fr">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Titre de la page</title>
+
+  </head>
+
+  <body>
+    <header>
+        <center><img src="images\logo-lbp-header.png" alt="Logo"></center>
+        <hr>
+            <nav>
+                <a href="index.html">Accueil</a> &nbsp;|&nbsp;
+                <a href="about.html">A propos</a> &nbsp;|&nbsp;
+                <a href="inscription.html">Inscription</a> &nbsp;|&nbsp;
+                <a href="connexion.html">Connexion</a> &nbsp;|&nbsp;
+                <a href="avis.html">Avis</a> &nbsp;|&nbsp;
+                <a href="contact.html">Contact</a> &nbsp;|&nbsp;
+            </nav>
+        <hr>
+    </header>
+    <main>
+    <h1>Créez un compte</h1>
+    <h2>Formulaire d'inscription</h2>
+    <form method="get">
+      <label for="civilite">Civilité :</label>
+      <select id="civilite" name="civilite" required>
+        <option value="">--Sélectionnez--</option>
+        <option value="monsieur">Monsieur</option>
+        <option value="madame">Madame</option>
+      </select>
+      <br><br>
+      
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
+      <br><br>
+      
+      <label for="prenom">Prénom :</label>
+      <input type="text" id="prenom" name="prenom" required>
+      <br><br>
+      
+      <label for="email">Courriel :</label>
+      <input type="email" id="email" name="email" required>
+      <br><br>
+      
+      <label for="mdp">Mot de passe :</label>
+      <input type="password" id="mdp" name="mdp" minlength="1" required>
+      <br><br>
+      
+      <label for="mdp_confirm">Confirmez le mot de passe :</label>
+      <input type="password" id="mdp_confirm" name="mdp_confirm" minlength="1" required>
+      <br><br>
+      
+      <button type="submit">Envoyer</button>
+      <button type="reset">Réinitialiser</button>
+    </form>
+    </main>
+    <footer>
+      <hr>
+      <center><p>Copyright 2026 Corbeille WWW</p></center>
+  </footer>
+  </body>
+
+</html>
