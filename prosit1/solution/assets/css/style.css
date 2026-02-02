@@ -53,7 +53,10 @@ form input{
     color: #334155;
 }
 .file-upload:hover{border:none;}
-.file-upload label{border: none; width: max-content;}
+.file-upload label{
+    border: none; 
+    width: max-content;
+}
 .file-upload label:hover{border: none;}
 
 .file-upload::file-selector-button {
