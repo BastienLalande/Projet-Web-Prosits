@@ -30,7 +30,7 @@ form * {
     padding: 5px;
     margin-bottom: 12px;
     width: 100%;
-    border: solid 1px gray;
+    border: solid 1px #cbd5e1;
     border-radius: 10px;
 }
 
@@ -42,6 +42,51 @@ form input{
     max-width: 200px;
 }
 
+.file-upload{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    max-width: 500px;
+    font-size: 0.95rem;
+    color: #334155;
+}
+.file-upload:hover{border:none;}
+.file-upload label{border: none; width: max-content;}
+.file-upload label:hover{border: none;}
+
+.file-upload::file-selector-button {
+    border: solid 1px #cbd5e1;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 5px;
+    margin-right: 10px;}
+.form-file {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    font-size: 0.95rem;
+    color: #334155;
+    border: none;
+}
+.form-file:hover{border:none;}
+
+.form-file::file-selector-button {
+    border: solid 1px #cbd5e1;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.form-file::file-selector-button:hover {
+    border: solid 1px black;
+}
 
 form textarea{
     margin: 10px;
